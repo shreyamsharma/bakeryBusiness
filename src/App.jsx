@@ -1,68 +1,127 @@
 import './App.css'
+import heroInspo from './assets/img_8905.png'
+import redInspo from './assets/img_8906.png'
+import coffeeInspo from './assets/img_8908.png'
+import pancakeInspo from './assets/img_8909.png'
 
 function App() {
   const year = new Date().getFullYear()
 
   return (
-    <>
-      <header className="hero">
-        <p className="eyebrow">Fresh Every Morning</p>
-        <h1>Sunrise Bakery</h1>
-        <p className="hero-copy">
-          Handcrafted breads, celebration cakes, and buttery pastries made daily
-          with local ingredients.
-        </p>
-        <div className="hero-actions">
-          <a href="#menu" className="btn btn-primary">View Menu</a>
-          <a href="#contact" className="btn btn-secondary">Order Now</a>
+    <div className="page-shell">
+      <div className="top-ticker">FRESHLY BAKED DAILY • SMALL BATCH • LOCAL FLOUR • CATERING + EVENTS •</div>
+
+      <header className="hero" id="top">
+        <nav className="main-nav">
+          <p className="brand">Sunrise Bakery</p>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div className="hero-grid">
+          <div className="hero-copy">
+            <p className="eyebrow">Artisan Bakery Studio</p>
+            <h1>Baking Happiness For Every Heart</h1>
+            <p>
+              Warm breads, flaky pastries, and custom celebration cakes inspired by
+              handcrafted editorial food design.
+            </p>
+            <div className="hero-actions">
+              <a href="#menu" className="btn btn-solid">Order Your Box</a>
+              <a href="#story" className="btn btn-outline">See Our Story</a>
+            </div>
+          </div>
+
+          <figure className="hero-shot">
+            <img src={heroInspo} alt="Bakery design inspiration board" />
+          </figure>
         </div>
       </header>
 
-      <section className="section" id="menu">
-        <h2>Popular Bakes</h2>
-        <div className="grid">
-          <article className="card">
-            <h3>Sourdough Loaf</h3>
-            <p>Long-fermented, crackling crust, naturally leavened.</p>
-            <span>$8</span>
+      <section className="proof-bar" aria-label="Bakery promises">
+        <p>No Artificial Colors</p>
+        <p>Pure Butter & Local Dairy</p>
+        <p>Made Fresh Daily</p>
+        <p>Delivery In 45 Minutes</p>
+      </section>
+
+      <section className="story section" id="story">
+        <div className="story-photo">
+          <img src={redInspo} alt="Creative bakery layout collage" />
+        </div>
+        <div className="story-copy">
+          <h2>Sweetness Delivered In Every Box</h2>
+          <p>
+            Inspired by boutique cafe websites, our menu blends modern design with
+            traditional baking. Every box carries fresh sourdough, buttery danish,
+            and seasonal specials packed by hand.
+          </p>
+          <ul>
+            <li>Sourdough</li>
+            <li>Baguette</li>
+            <li>Focaccia</li>
+            <li>Signature Croissant</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="menu section" id="menu">
+        <h2>Featured Menu</h2>
+        <div className="menu-grid">
+          <article className="menu-card">
+            <h3>Butter Croissant</h3>
+            <p>Shattered layers, cultured butter, baked every morning.</p>
+            <span>$4.90</span>
           </article>
-          <article className="card">
-            <h3>Chocolate Croissant</h3>
-            <p>Flaky laminated dough with rich dark chocolate center.</p>
-            <span>$5</span>
+          <article className="menu-card accent">
+            <h3>Country Sourdough</h3>
+            <p>Long fermented 28 hours with crisp caramelized crust.</p>
+            <span>$8.50</span>
           </article>
-          <article className="card">
-            <h3>Custom Birthday Cake</h3>
-            <p>Choose flavor, size, and design for your big day.</p>
-            <span>From $45</span>
+          <article className="menu-card">
+            <h3>Celebration Cake</h3>
+            <p>Custom frosting, hand piping, and premium fillings.</p>
+            <span>From $42</span>
           </article>
         </div>
       </section>
 
-      <section className="section highlight">
-        <h2>Why Customers Love Us</h2>
-        <p>
-          Family-owned, small-batch baking and same-day pickup options for
-          bread, pastries, and events.
-        </p>
-        <ul>
-          <li>Open 6:30 AM to 7:00 PM, 7 days a week</li>
-          <li>Free delivery on orders over $35</li>
-          <li>Wedding and catering packages available</li>
-        </ul>
+      <section className="process section" id="process">
+        <h2>From Dough To Delight</h2>
+        <div className="process-grid">
+          <article>
+            <img src={coffeeInspo} alt="Step one visual reference" />
+            <p className="step">Step 1</p>
+            <h3>Mix</h3>
+          </article>
+          <article>
+            <img src={pancakeInspo} alt="Step two visual reference" />
+            <p className="step">Step 2</p>
+            <h3>Bake</h3>
+          </article>
+          <article>
+            <img src={heroInspo} alt="Step three visual reference" />
+            <p className="step">Step 3</p>
+            <h3>Serve</h3>
+          </article>
+        </div>
       </section>
 
-      <section className="section contact" id="contact">
-        <h2>Visit or Call</h2>
+      <section className="contact section" id="contact">
+        <h2>Visit Sunrise Bakery</h2>
         <p>123 Market Street, Downtown</p>
         <p>(555) 234-8910</p>
         <p>hello@sunrisebakery.com</p>
       </section>
 
       <footer>
-        <p>© {year} Sunrise Bakery. All rights reserved.</p>
+        <p>© {year} Sunrise Bakery</p>
       </footer>
-    </>
+    </div>
   )
 }
 
