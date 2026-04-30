@@ -13,7 +13,7 @@ function App() {
 
       <header className="hero" id="top">
         <nav className="main-nav">
-          <p className="brand">Sunrise Bakery</p>
+          <p className="brand">pāka bakehouse</p>
           <ul>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#story">Story</a></li>
@@ -112,14 +112,14 @@ function App() {
       </section>
 
       <section className="contact section" id="contact">
-        <h2>Visit Sunrise Bakery</h2>
+        <h2>Visit pāka bakehouse</h2>
         <p>123 Market Street, Downtown</p>
         <p>(555) 234-8910</p>
-        <p>hello@sunrisebakery.com</p>
+        <p>hello@pakabakehouse.com</p>
       </section>
 
       <footer>
-        <p>© {year} Sunrise Bakery</p>
+        <p>© {year} pāka bakehouse</p>
       </footer>
     </div>
   )
