@@ -60,11 +60,10 @@
   text-transform: uppercase;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 1.2rem;
-  align-items: center;
+.hero-copy-full {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .eyebrow {
@@ -75,7 +74,7 @@
   color: var(--sand);
 }
 
-.hero-copy h1 {
+.hero-copy-full h1 {
   margin: 0.4rem 0 0.8rem;
   font-family: 'Bebas Neue', Impact, sans-serif;
   letter-spacing: 0.02em;
@@ -83,9 +82,8 @@
   line-height: 0.95;
 }
 
-.hero-copy p {
+.hero-copy-full p {
   margin: 0;
-  max-width: 38ch;
 }
 
 .hero-actions {
@@ -93,6 +91,7 @@
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 1.2rem;
+  justify-content: center;
 }
 
 .btn {
@@ -119,22 +118,6 @@
   color: #f0fff4;
 }
 
-.hero-shot {
-  margin: 0;
-  border-radius: 22px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 24px 34px rgba(12, 44, 30, 0.33);
-}
-
-.hero-shot img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  aspect-ratio: 4/4.5;
-}
-
 .proof-bar {
   background: #edf7e9;
   padding: 1rem 1.4rem;
@@ -158,27 +141,15 @@
 }
 
 .story {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.3rem;
-  align-items: center;
   background: linear-gradient(90deg, rgba(223, 205, 128, 0.23), rgba(245, 226, 176, 0.35));
 }
 
-.story-photo {
-  margin: 0;
-  border: 10px solid #fff7e6;
-  box-shadow: 0 16px 35px rgba(72, 83, 49, 0.18);
+.story-copy-full {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.story-photo img {
-  width: 100%;
-  display: block;
-  aspect-ratio: 4/4;
-  object-fit: cover;
-}
-
-.story-copy h2,
+.story-copy-full h2,
 .menu h2,
 .process h2,
 .contact h2 {
@@ -189,12 +160,12 @@
   color: #2f563f;
 }
 
-.story-copy p {
+.story-copy-full p {
   margin: 0.9rem 0;
   color: #2e4539;
 }
 
-.story-copy ul {
+.story-copy-full ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -203,7 +174,7 @@
   gap: 0.55rem;
 }
 
-.story-copy li {
+.story-copy-full li {
   border: 1px solid #7fa091;
   color: #264b35;
   padding: 0.35rem 0.68rem;
@@ -261,33 +232,32 @@
   gap: 0.95rem;
 }
 
-.process-grid article {
+.process-step {
   background: #f2f9ee;
   border-radius: 16px;
-  overflow: hidden;
+  padding: 1.5rem;
   border: 1px solid #cadfcf;
 }
 
-.process-grid img {
-  width: 100%;
-  aspect-ratio: 4/3;
-  object-fit: cover;
-  display: block;
-}
-
 .step {
-  margin: 0.8rem 1rem 0;
+  margin: 0;
   color: #5b7768;
   font-size: 0.82rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
-.process-grid h3 {
-  margin: 0.25rem 1rem 1rem;
+.process-step h3 {
+  margin: 0.4rem 0 0.8rem;
   font-family: 'Bebas Neue', Impact, sans-serif;
   letter-spacing: 0.04em;
   color: #264735;
+}
+
+.process-step p {
+  margin: 0;
+  color: #3a4d41;
+  font-size: 0.95rem;
 }
 
 .contact {
@@ -319,8 +289,6 @@ footer {
     gap: 0.7rem;
   }
 
-  .hero-grid,
-  .story,
   .menu-grid,
   .process-grid,
   .proof-bar {

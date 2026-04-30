@@ -1,8 +1,4 @@
 import './App.css'
-import heroInspo from './assets/img_8905.png'
-import redInspo from './assets/img_8906.png'
-import coffeeInspo from './assets/img_8908.png'
-import pancakeInspo from './assets/img_8909.png'
 
 function App() {
   const year = new Date().getFullYear()
@@ -13,7 +9,7 @@ function App() {
 
       <header className="hero" id="top">
         <nav className="main-nav">
-          <p className="brand">pāka bakehouse</p>
+          <p className="brand">Pāka bakehouse</p>
           <ul>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#story">Story</a></li>
@@ -22,23 +18,17 @@ function App() {
           </ul>
         </nav>
 
-        <div className="hero-grid">
-          <div className="hero-copy">
-            <p className="eyebrow">Artisan Bakery Studio</p>
-            <h1>Baking Happiness For Every Heart</h1>
-            <p>
-              Warm breads, flaky pastries, and custom celebration cakes inspired by
-              handcrafted editorial food design.
-            </p>
-            <div className="hero-actions">
-              <a href="#menu" className="btn btn-solid">Order Your Box</a>
-              <a href="#story" className="btn btn-outline">See Our Story</a>
-            </div>
+        <div className="hero-copy-full">
+          <p className="eyebrow">Artisan Bakery Studio</p>
+          <h1>Baking Happiness For Every Heart</h1>
+          <p>
+            Warm breads, flaky pastries, and custom celebration cakes inspired by
+            handcrafted editorial food design.
+          </p>
+          <div className="hero-actions">
+            <a href="#menu" className="btn btn-solid">Order Your Box</a>
+            <a href="#story" className="btn btn-outline">See Our Story</a>
           </div>
-
-          <figure className="hero-shot">
-            <img src={heroInspo} alt="Bakery design inspiration board" />
-          </figure>
         </div>
       </header>
 
@@ -50,10 +40,7 @@ function App() {
       </section>
 
       <section className="story section" id="story">
-        <div className="story-photo">
-          <img src={redInspo} alt="Creative bakery layout collage" />
-        </div>
-        <div className="story-copy">
+        <div className="story-copy-full">
           <h2>Sweetness Delivered In Every Box</h2>
           <p>
             Inspired by boutique cafe websites, our menu blends modern design with
@@ -93,20 +80,20 @@ function App() {
       <section className="process section" id="process">
         <h2>From Dough To Delight</h2>
         <div className="process-grid">
-          <article>
-            <img src={coffeeInspo} alt="Step one visual reference" />
+          <article className="process-step">
             <p className="step">Step 1</p>
             <h3>Mix</h3>
+            <p>Carefully blend flour, water, salt, and time to create the perfect dough.</p>
           </article>
-          <article>
-            <img src={pancakeInspo} alt="Step two visual reference" />
+          <article className="process-step">
             <p className="step">Step 2</p>
             <h3>Bake</h3>
+            <p>Low and slow in our stone oven for perfect crust and tender crumb.</p>
           </article>
-          <article>
-            <img src={heroInspo} alt="Step three visual reference" />
+          <article className="process-step">
             <p className="step">Step 3</p>
             <h3>Serve</h3>
+            <p>Enjoy warm from the oven with butter and your favorite toppings.</p>
           </article>
         </div>
       </section>
