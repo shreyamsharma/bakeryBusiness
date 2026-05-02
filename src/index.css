@@ -1,17 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
 
 :root {
+  /* core */
+  --forest: #1C3A28;
+  --cream: #F7F0DC;
+  --sand: #DFCD80;
+  --warm-white: #FFFCF4;
+  /* original brand palette */
   --deep-green: #658C6E;
   --seafoam: #85A898;
   --mint: #EFF9E8;
-  --cream: #F5E2B0;
-  --sand: #DFCD80;
+  --soft-cream: #F5E2B0;
 
   font-family: 'Inter', 'Segoe UI', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #274435;
-  background: #eff6ea;
+  color: #1C3A28;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,19 +29,11 @@
 body {
   margin: 0;
   min-width: 320px;
-  background:
-    radial-gradient(circle at 90% 5%, rgba(223, 205, 128, 0.45), transparent 30%),
-    radial-gradient(circle at 8% 2%, rgba(133, 168, 152, 0.48), transparent 26%),
-    #f7f8ef;
+  background: #F7F0DC;
 }
 
 #root {
-  max-width: 1120px;
-  margin: 1.6rem auto;
-  border: 1px solid #c5d8ca;
-  border-radius: 30px;
-  overflow: hidden;
-  box-shadow: 0 26px 48px rgba(34, 70, 48, 0.16);
+  width: 100%;
 }
 
 h1,
